@@ -250,7 +250,7 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 1px solid #222227;
 }
 .sidebar_logo img {
-    width: 100px;
+    width: 40px;
     height: auto;
     display: block;
 }
