@@ -24,21 +24,62 @@
                 <div class="d-flex flex-row justify-content-between align-items-center">
                     <!--Header Toggler Start-->
                     <div class="menu-toggler">
-                        <a class="toggler text-reset" data-bs-toggle="offcanvas"
-                        href="" role="button">
+                        <a class="toggler text-reset" data-bs-toggle="offcanvas" href="#clickOffCanvas" role="button" aria-controls="clickOffCanvas">
                             <div class="kt-r">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
-                            <div class="kt-t">测试</div>
                         </a>
                     </div>
                     <!--Header Toggler End-->
+                    <!--Header Logo Start-->
+                    <div>
+                        <a href="#">
+                            <img src="img/index/logo.jpg" height="30" alt="Open">
+                        </a>
+                    </div>
+                    <!--Header Logo End-->
+                    <!--Header Info Start-->
+                    <div class="nav-meta fs-5 fw-bold d-none d-sm-block text-end">
+                        <a href="#" class="text-reset">Lin KaiZhe</a>
+                    </div>
+                    <!--Header Info End-->
                 </div>
             </div>
         </header>
         <!--Header End-->
+        <!--OffCanvas Start-->
+        <div class="offcanvas offcanvas-start" id="clickOffCanvas">
+            <!--OffCanvas Header Start-->
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset"></button>
+            </div>
+            <!--OffCanvas Header End-->
+            <!--OffCanvas Body Start-->
+            <div class="offcanvas-body">
+                <div class="offcanvas-nav-container d-flex flex-column justify-content-center align-items-center">
+                    <!--OffCanvas Navigation Start-->
+                    <ul class="list-inline">
+                        <li class="py-3">
+                            <a href="#" class="underline_animation underline_text text-reset fs-4 fw-bold">主页</a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="underline_animation underline_text text-reset fs-4 fw-bold">书籍</a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="underline_animation underline_text text-reset fs-4 fw-bold">图片</a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="underline_animation underline_text text-reset fs-4 fw-bold">音乐</a>
+                        </li>
+                    </ul>
+                    <!--OffCanvas Navigation End-->
+                </div>
+            </div>
+            <!--OffCanvas Body End-->
+        </div>
+        <!--OffCanvas End-->
 
         <!--JavaScript-->
         <script src="js/bootstrap.min.js"></script>
