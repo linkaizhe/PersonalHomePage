@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #01010d;
+    background: #bed2dd;
     -webkit-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
 }
@@ -61,4 +61,15 @@
 .underline_animation:hover.underline_text,
 .underline_animation:hover .underline_text {
     background-size: 100% 2px;
+}
+
+
+
+.fit-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.fit-left-top {
+    -o-object-position: left top;
+    object-position: left top;
 }
