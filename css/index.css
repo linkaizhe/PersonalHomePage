@@ -1,0 +1,142 @@
+
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: #bed2dd;
+}
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition: .5s ease;
+    transition-property: color, background-color, border-color, box-shadow;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    background: #222227;
+}
+
+
+
+
+
+
+/* Header */
+.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 70px;
+    background-color: #bed2dd;
+    border-bottom: 1px solid #222227;
+    z-index: 101;
+}
+.header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+.header_logo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+.header_logo img {
+    width: 30px;
+    height: auto;
+    display: block;
+}
+.header_btn {
+    position: absolute;
+    width: 24px;
+    height: 22px;
+    display: block;
+    right: 15px;
+    top: 24px;
+}
+.header_btn span {
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #222227;
+    border-radius: 2px;
+    transition: .5s ease;
+}
+.header_btn span:first-child {
+    top: 0;
+}
+.header_btn span:nth-child(2) {
+    top: 10px;
+    width: 16px;
+}
+.header_btn span:last-child {
+    top: 20px;
+    width: 8px;
+}
+.header_btn:hover span {
+    background-color: #25a56a;
+}
+.header_btn--active span {
+    background-color: #25a56a;
+}
+.header_btn--active span:first-child {
+    transform: rotate(-45deg);
+    top: 9px;
+}
+.header_btn--active span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+.header_btn--active span:last-child {
+    width: 24px;
+    transform: rotate(45deg);
+    top: 9px;
+}
+@media (min-width: 576px) {
+    .header_content {
+        padding: 0 30px;
+    }
+    .header_btn {
+        right: 30px;
+    }
+}
+@media (min-width: 1200px) {
+    .header {
+        position: relative;
+        padding-left: 280px;
+    }
+    .header--mobile {
+        display: none;
+    }
+    .header_logo,
+    .header_btn {
+        display: none;
+    }
+}
