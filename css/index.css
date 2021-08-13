@@ -136,10 +136,10 @@ ul {
     width: 8px;
 }
 .header_btn:hover span {
-    background-color: #FFFF99;
+    background-color: #FFC0CB;
 }
 .header_btn--active span {
-    background-color: #FFFF99;
+    background-color: #FFC0CB;
 }
 .header_btn--active span:first-child {
     transform: rotate(-45deg);
@@ -284,7 +284,7 @@ ul {
     width: 100%;
     max-width: 90px;
 }
-.player_cover img {
+.player_cover svg {
     width: 100%;
     height: auto;
     display: block;
@@ -326,7 +326,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     z-index: 103;
-    color: #25a56a;
+    color: #FFF;
     font-size: 14px;
     border: 1px solid #444D56;
     border-bottom: none;
@@ -334,7 +334,6 @@ ul {
 .player_btn svg {
     width: 18px;
     height: auto;
-    fill: #25a56a;
     margin-right: 8px;
 }
 .player--active {
@@ -362,7 +361,7 @@ ul {
     background-color: transparent !important;
 }
 .plyr__control:hover svg {
-    fill: #25a56a;
+    fill: #FFC0CB;
 }
 .plyr__controls {
     display: flex;
@@ -383,13 +382,13 @@ ul {
     margin: 0 5px;
 }
 .plyr__tooltip {
-    background-color: #25a56a;
+    background-color: #FFC0CB;
     box-shadow: none;
     color: #222227;
     font-size: 14px !important;
 }
 .plyr__tooltip:before {
-    border-top-color: #25a56a;
+    border-top-color: #FFC0CB;
 }
 .plyr__wrap {
     display: flex;
