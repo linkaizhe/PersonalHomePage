@@ -7,6 +7,42 @@ $(document).ready(function() {
         $('.sidebar').toggleClass('sidebar--active');
     });
 
+	// Main
+	$('.hero').owlCarousel({
+		mouseDrag: true,
+		touchDrag: true,
+		dots: true,
+		loop: true,
+		autoplay: false,
+		smartSpeed: 600,
+		autoHeight: true,
+		items: 1,
+		responsive: {
+			0: {
+				margin: 20,
+			},
+			576: {
+				margin: 20,
+			},
+			768: {
+				margin: 30,
+			},
+			1200: {
+				margin: 30,
+			},
+		}
+	});
+
+	// Navigation
+	$('.main_nav--prev').on('click', function () {
+		var carouselId = $(this).attr('data-nav');
+		$(carouselId).trigger('prev.owl.carousel');
+	});
+	$('.main_nav--next').on('click', function() {
+		var carouselId = $(this).attr('data-nav');
+		$(carouselId).trigger('next.owl.carousel');
+	});
+
     // Background
     $('.hero_slide, .event').each(function () {
         if ($(this).attr("data-bg")) {
