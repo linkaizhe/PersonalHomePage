@@ -44,16 +44,16 @@ $(document).ready(function() {
 	});
 
     // Background
-    $('.hero_slide, .event').each(function () {
-        if ($(this).attr("data-bg")) {
-            $(this).css({
-                'background': 'url(' + $(this).data('bg') + ')',
-                'background-position': 'center center',
-                'background-repeat' : 'no-repeat',
-                'background-size' : 'cober'
-            });
-        }
-    });
+    $('.hero_slide').each( function() {
+		if ($(this).attr("data-bg")){
+			$(this).css({
+				'background': 'url(' + $(this).data('bg') + ')',
+				'background-position': 'center center',
+				'background-repeat': 'no-repeat',
+				'background-size': 'cover'
+			});
+		}
+	});
 
     // MusicPlayer
     $('.player_btn').on('click', function() {

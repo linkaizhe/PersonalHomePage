@@ -568,6 +568,9 @@ ul {
     margin-top: 20px;
     position: relative;
 }
+.main_carousel .owl-dot {
+    margin-right: 10px;
+}
 .main_carousel .owl-dot:last-child {
     margin-right: 0;
 }
@@ -695,7 +698,7 @@ ul {
         bottom: 15px;
     }
     .main_nav--hero svg {
-        fill: #fff;
+        fill: #87CEEB;
     }
     .main_nav--hero.main_nav--prev {
         right: 95px;
@@ -704,7 +707,7 @@ ul {
         right: 65px;
     }
     .main_nav--hero:hover svg {
-        fill: #25a56a;
+        fill: #87CEEB;
     }
 }
 
@@ -734,12 +737,12 @@ ul {
     height: 4px;
     width: 10px;
     border-radius: 2px;
-    background-color: #25a56a;
+    background-color: #C0C0C0;
     transition: .5s ease;
 }
 .hero .owl-dot.active span {
     width: 20px;
-    background-color: #25a56a;
+    background-color: #87CEEB;
 }
 .hero .owl-stage-outer {
     border-radius: 12px;
@@ -764,7 +767,6 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #c0c0c0;
     z-index: 1;
 }
 .hero_title {
@@ -825,33 +827,15 @@ ul {
     margin-right: 0;
 }
 .hero_btn:hover {
-    color: #25a56a;
-}
-.hero_btn--video {
-    text-transform: none;
-    font-size: 16px;
-}
-.hero_btn--video svg {
-    fill: #25a56a;
-    width: 28px;
-    height: auto;
-    margin-right: 10px;
-    transition: fill .5s ease;
-}
-.hero_btn--video:hover {
-    background-color: #25a56a;
-    color: #fff;
-}
-.hero_btn--video:hover svg {
-    fill: #fff;
+    color: #87CEEB;
 }
 .hero_btn--green {
     background-color: #25a56a;
     color: #fff;
 }
 .hero_btn--green:hover {
-    background-color: #222227;
-    color: #25a56a;
+    background-color: #25a56a;
+    color: #87CEEB;
 }
 @media (min-width: 576px) {
     .hero_slide {
@@ -897,10 +881,10 @@ ul {
         z-index: 2;
     }
     .hero .owl-dot span {
-        background-color: rgba(255,255,255,0.6);
+        background-color: #FFF;
     }
     .hero .owl-dot.active span {
-        background-color: #fff;
+        background-color: #87CEEB;
     }
     .hero_title {
         font-size: 44px;
@@ -947,10 +931,10 @@ ul {
     text-decoration: none;
     margin-top: 10px;
     color: #999;
-    font-size: 16px;
+    font-size: 14px;
 }
 .footer_links a svg {
-    width: 20px;
+    width: 16px;
     height: auto;
     fill: #999;
     margin-right: 10px;
@@ -972,6 +956,7 @@ ul {
 .footer_copyright a {
     color: #999;
     text-decoration: none;
+    font-size: 14px;
 }
 .footer_copyright a:hover {
     color: #87CEEB;
