@@ -33,6 +33,37 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.main_carousel--music').owlCarousel({
+		mouseDrag: true,
+		touchDrag: true,
+		dots: true,
+		loop: true,
+		autoplay: false,
+		smartSpeed: 600,
+		margin: 20,
+		autoHeight: true,
+		responsive: {
+			0 : {
+				items: 2,
+			},
+			576 : {
+				items: 3,
+			},
+			768 : {
+				items: 4,
+				margin: 30,
+			},
+			992 : {
+				items: 6,
+				margin: 30,
+			},
+			1200 : {
+				items: 6,
+				margin: 30
+			},
+		}
+	});
+
 	// Navigation
 	$('.main_nav--prev').on('click', function () {
 		var carouselId = $(this).attr('data-nav');
@@ -124,7 +155,41 @@ $(document).ready(function() {
 		$('a[data-link].active, a[data-playlist].active').addClass('pause');
 	});
 
+	$('a[data-link]').on('click', function(e){
+		e.preventDefault();
+		let link = $(this);
+		run(link, audio[0]);
+	});
 
+	function run(link, player){
+		if ($(link).hasClass('play')) {
+			$(link).removeClass('play');
+			audio[0].pause();
+			$(link).addClass('pause');
+		}
+		else if ($(link).hasClass('pause')) {
+			$(link).removeClass('pause');
+			audio[0].play();
+			$(link).addClass('play');
+		}
+		else {
+			$('a[data-link]').removeClass('active');
+			$('a[data-link]').removeClass('pause');
+			$('a[data-link]').removeClass('play');
+			$(link).addClass('active');
+			$(link).addClass('play');
+			player.src = $(link).attr('href');
+
+			let title = $(link).data('title');
+			let artist = $(link).data('artist');
+			let img = $(link).data('img');
+			$('.player_title').text(title);
+			$('.player_artist').text(artist);
+			$('.player_cover img').attr('src', img);
+			audio[0].load();
+			audio[0].play();
+		}
+	}
 
 
 });
